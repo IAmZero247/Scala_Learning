@@ -1,4 +1,4 @@
-package pack_12_catching
+package l13_catching
 import scala.util.control.Exception.catching
 
 object Demo_Catching {

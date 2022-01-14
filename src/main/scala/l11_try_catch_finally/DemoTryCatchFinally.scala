@@ -1,11 +1,11 @@
-package pack_10_try_catch_finally
+package l11_try_catch_finally
 
 import java.io.{FileNotFoundException, FileReader, IOException}
 
 object DemoTryCatchFinally {
   def main(args: Array[String]): Unit = {
     try {
-      val f = new FileReader("C:\\Users\\Sandeep\\Desktop\\ScalaLearning\\P02ClassesAndMethods\\src\\main\\scala\\pack_10_try_catch_finally\\input.txt")
+      val f = new FileReader("C:\\Users\\Sandeep\\Desktop\\ScalaLearning\\ScalaLearning\\src\\main\\scala\\l11_try_catch_finally\\input.txt")
 
       val a = 10/5
       println(a)
