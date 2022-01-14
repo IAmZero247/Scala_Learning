@@ -12,10 +12,15 @@
 
 
 2. Notes 
+  ```
   1. ^ ---> It is used to match starting point of the line.
+
   2. $ ---> It is used to match terminating point of the line.
+
   3. . ---> It is used to match any one character excluding the newline.
+
   4. […] ---> It is used to match any one character within the brackets.
+
      [^…]---> It is used to match any one character which is not in the brackets.
 
      Ex- > [Rr]uby  >> Match "Ruby" or "ruby"
@@ -35,10 +40,6 @@
      \\Z ---> It is used to match end of the whole string excluding the new line, if it exists.
 
 
-
-
-
-
   6. re*       ---> It is utilized to match zero or more appearances of the foregoing expressions.
      re+       ---> It is used to match one or more of the foregoing expressions.
      re?       ---> It is used to match zero or one appearance of the foregoing expression.
@@ -51,7 +52,7 @@
    8.  (re)    ---> It is utilized to group the Regular expressions and recollects the text that are
                  matched.
        (?: re) ---> It also groups the regular expressions but does not recollects the matched text.
-      (?> re)  --->It is utilized to match self-reliant pattern in absence of backtracking.
+       (?> re) --->It is utilized to match self-reliant pattern in absence of backtracking.
 
    9. \\w  ---> It is used to match characters of the word.  [A-Za-z0-9_]
       \\W  ---> It is used to match characters of the non-word.  [^A-Za-z0-9_]
@@ -81,4 +82,4 @@
          (\\D\\d)+/ Grouped: + repeats \\D\d pair
          ([Rr]uby(, )?)+ Match "Ruby", "Ruby, ruby, ruby", etc.
 
-   
+  ``` 
