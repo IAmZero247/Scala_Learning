@@ -1,4 +1,4 @@
-package pack08_implicit_class
+package l09_implicit_class
 
 
 

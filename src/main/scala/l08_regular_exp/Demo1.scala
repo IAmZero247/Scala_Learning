@@ -1,4 +1,4 @@
-package pack07_regular_exp
+package l08_regular_exp
 import scala.util.matching.Regex
 
 object Demo1 {
