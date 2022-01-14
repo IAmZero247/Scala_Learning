@@ -42,6 +42,6 @@
     val getNameLengthDefFnValue = getNameLengthDef _
     val multiplyByTwoDefFnValue = multiplyByTwoDef _ 
     
-    getNameLengthDefFnValue.andThen(multiplyByTwoDefFnValue) // comp  
+    getNameLengthDefFnValue.andThen(multiplyByTwoDefFnValue) // compiles  
    ```
     
