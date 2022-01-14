@@ -24,4 +24,8 @@
              
    ```   
 6. Scala Compiler adds toString, equals methods, companion object with apply and unapply methods, for that reason you don’t 
-   need new keyword to construct object of a Case class.     
+   need new keyword to construct object of a Case class. 
+   
+# Case Object 
+1. It is serializable.
+2. It has a by default hashCode implementation.    
