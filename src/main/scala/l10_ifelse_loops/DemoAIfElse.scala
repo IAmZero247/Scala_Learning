@@ -1,4 +1,4 @@
-package pack09_ifelse_loops
+package l10_ifelse_loops
 
 object DemoAIfElse {
   def main(args: Array[String]): Unit = {
