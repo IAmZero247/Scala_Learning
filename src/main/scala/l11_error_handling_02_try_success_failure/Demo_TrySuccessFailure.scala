@@ -1,4 +1,4 @@
-package l12_try_success_failure
+package l11_error_handling_02_try_success_failure
 
 import scala.util.Try
 import scala.util.Success

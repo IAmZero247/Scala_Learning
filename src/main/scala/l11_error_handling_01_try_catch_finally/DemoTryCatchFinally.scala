@@ -1,4 +1,4 @@
-package l11_try_catch_finally
+package l11_error_handling_01_try_catch_finally
 
 import java.io.{FileNotFoundException, FileReader, IOException}
 
