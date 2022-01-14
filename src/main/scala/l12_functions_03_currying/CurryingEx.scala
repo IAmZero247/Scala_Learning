@@ -1,4 +1,4 @@
-package l12_functions_02_currying
+package l12_functions_03_currying
 
 object CurryingEx {
   def add(x: Int, y: Int ,z:Int): Int  = x + y +z;
