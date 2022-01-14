@@ -1,4 +1,4 @@
-package pack03_companion
+package l04_companion
 
 class CompanionDemo {
   var x = 5

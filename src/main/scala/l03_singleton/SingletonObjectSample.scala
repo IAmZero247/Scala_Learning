@@ -1,5 +1,5 @@
-package pack02_singleton
-
+package l03_singleton
+//Think like a static fields and methods in java
 object SingletonObjectSample {
   val x = 2
   val y = 5.5
