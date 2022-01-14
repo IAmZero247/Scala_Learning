@@ -1,4 +1,4 @@
-#Companion Object and Companion Class 
+#  Companion Object and Companion Class 
 
 1. Companion object is known as an object whose name is same as the name of the class. 
 
