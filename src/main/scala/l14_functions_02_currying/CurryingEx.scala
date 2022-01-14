@@ -1,6 +1,6 @@
-package pack10_functions_1a
+package l14_functions_02_currying
 
-object fun002_currying {
+object CurryingEx {
   def add(x: Int, y: Int): Int  = x + y;
 
   def addcurried1(x:Int)(y:Int):Int =x+y;
