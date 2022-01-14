@@ -1,4 +1,4 @@
-package pack04_case_classes
+package l05_case_classes
 
 object Demo {
   def main(args: Array[String]): Unit = {
