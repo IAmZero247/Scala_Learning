@@ -1,4 +1,4 @@
-package pack06_patterns
+package l08_patterns
 
 case class Car(name:String, cost:Int)
 object PatternDemo2 {

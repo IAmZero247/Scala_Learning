@@ -1,4 +1,4 @@
-package pack05_strings
+package l07_strings
 
 object StringDemo {
   def main(args: Array[String]): Unit = {

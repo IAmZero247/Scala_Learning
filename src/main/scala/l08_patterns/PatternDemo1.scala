@@ -1,4 +1,4 @@
-package pack06_patterns
+package l08_patterns
 case class PatternDemo1() {
 
   def matchPattern1(x:Int) = x match {
