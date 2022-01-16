@@ -1,6 +1,12 @@
 # Scala_Learning
 My scala notes, because I need to store them somewhere...
 
+
+# Important Links 
+1.  https://allaboutscala.com/
+2.  https://www.scala-exercises.org/scala_tutorial/terms_and_types
+3.  https://www.geeksforgeeks.org/scala-programming-language/
+
 ## Type
 Every variable and expression in a Scala program has a type that is known at compile time:
 
