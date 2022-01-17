@@ -52,6 +52,8 @@
     }
     10 // some random total cost
    }
+
+
    //Invocation 
    val cartItem3: ShoppingCartItemWithCase = ShoppingCartItemWithCase(Donut("Glazed Donut", 2.50), 10)
    val shoppingCartItems: Seq[ShoppingCartItemWithCase] = Seq(ShoppingCartItemWithCase,);
