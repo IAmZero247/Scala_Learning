@@ -1,4 +1,4 @@
-package l09_implicit_class
+package l02_oops_06_implicit_class
 
 
 
