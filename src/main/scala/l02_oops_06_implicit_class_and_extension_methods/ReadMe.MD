@@ -26,3 +26,6 @@
      
      implicit case class Baz(x: Int) // BAD!
   ``` 
+
+# Pointers 
+1. It's a good practice to encapsulate Implicit Classes into an object which can later be injected or referenced.

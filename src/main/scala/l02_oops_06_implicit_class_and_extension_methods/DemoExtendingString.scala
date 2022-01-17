@@ -1,9 +1,9 @@
-package l02_oops_06_implicit_class
+package l02_oops_06_implicit_class_and_extension_methods
 
 
 
 
-object Demo {
+object DemoExtendingString {
 
   implicit  class StringHelper(s:String){
     def getFirstChar():String={
