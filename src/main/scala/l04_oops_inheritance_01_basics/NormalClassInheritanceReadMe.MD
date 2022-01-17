@@ -1,7 +1,7 @@
 # Inheritance
 1. Only the primary constructor can pass parameters to the base constructor
 2. Extend normal , abstract or trait.
-3. Can Extend only one class.
+3. Can extend only one class.
 
 # Implementation Demo 
 1. Base Class

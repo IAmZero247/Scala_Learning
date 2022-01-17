@@ -30,7 +30,7 @@ object GlazedDonut1 {
 
 }
 
-object InheritanceDemo {
+object InheritanceDemo1 {
   def main(args: Array[String]): Unit = {
     val vanillaDonut: Donut1 = VanillaDonut1("Vanilla Donut")
     vanillaDonut.printName
