@@ -1,4 +1,4 @@
-#Factory Via Companion Object
+#  Factory Via Companion Object
 
     ```$xslt
       class Car(name: String, model: Option[String], price:Option[Int]=None){
