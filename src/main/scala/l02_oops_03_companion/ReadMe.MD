@@ -9,6 +9,8 @@
 
 1. A companion object is allowed to access both private methods and private fields of the class. 
 
+1. Companion object to create instances for that particular class without having to make use of the new keyword.
+
    ```$xslt
     class Task(val description: String) {
       private var _status: String = "pending"

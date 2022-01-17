@@ -28,7 +28,7 @@
    
       //Invocation 
       calculateItemCost("Glazed Donut", 5)
-      calculateItemCost("Glazed Donut", 5, "MY COUPON")
+      calculateItemCost2("Glazed Donut", 5, Option("MY COUPON"))
    ```
 3. How to use the map function to extract a valid Option value
    ```$xslt

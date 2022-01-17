@@ -1,4 +1,4 @@
-package l02_primary_and_auxillary_constructor
+package l02_oops_01_primary_and_auxillary_constructor
 
 object Demo {
   def main(args: Array[String]): Unit = {

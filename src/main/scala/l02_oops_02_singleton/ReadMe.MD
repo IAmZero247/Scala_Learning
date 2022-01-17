@@ -1,6 +1,6 @@
 #  Singleton 
 
-1. Scala does not contain any concept of static keyword. Instead of static keyword Scala has singleton object.
+1. Scala does not have a static keyword! Instead, you can simply encapsulate a global field using the val keyword inside a Singleton Object.
 
 2. A singleton object is created by using object keyword. 
     

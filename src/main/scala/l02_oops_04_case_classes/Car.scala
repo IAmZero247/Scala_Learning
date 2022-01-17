@@ -1,4 +1,4 @@
-package l05_case_classes
+package l02_oops_04_case_classes
 
 case class Car(name: String, model: String) {
   val carName = name

@@ -1,4 +1,4 @@
-package l03_singleton
+package l02_oops_02_singleton
 //Think like a static fields and methods in java
 object SingletonObjectSample {
   val x = 2

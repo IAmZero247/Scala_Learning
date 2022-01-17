@@ -1,4 +1,4 @@
-package l02_primary_and_auxillary_constructor
+package l02_oops_01_primary_and_auxillary_constructor
 
 class Calc (val aHasDefault:Int = 10 , b:Double , sHasDefault:String = "default"){
   val x = aHasDefault       //var(can change the value) and val (can not change the value):

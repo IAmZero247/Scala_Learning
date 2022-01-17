@@ -1,4 +1,4 @@
-package l03_singleton
+package l02_oops_02_singleton
 
 object Demo {
   def main(args: Array[String]): Unit = {
