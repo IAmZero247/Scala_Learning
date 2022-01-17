@@ -1,4 +1,4 @@
-package l04_oops_inheritance_01_type_class_covariance_contravariance
+package l04_oops_inheritance_02_type_class_covariance_contravariance
 abstract class Donut(name: String) {
   def printName: Unit
 }
