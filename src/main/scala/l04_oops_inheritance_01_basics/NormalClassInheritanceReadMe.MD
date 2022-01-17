@@ -3,7 +3,9 @@
 2. Extend normal , abstract or trait.
 3. Can extend only one class.
 
-# Implementation Demo 
+###  Note: Like Java, In Scala, an abstract class can also contain a constructor and a constructor of an abstract class is called when an instance of a inherited class is created.
+
+## Implementation Demo 
 1. Base Class
   ```$xslt
     abstract class Donut(name: String) {
