@@ -8,7 +8,7 @@
        val glazedDonut: Donut = Donut("Glazed", 2.0)
  
    ```
-# Typed Tuple2 
+#  Typed Tuple2 
 1. CartItem using TypedTuple2
     
    ```$xslt
@@ -39,7 +39,7 @@
        val shoppingCartItems: Seq[CartItemWithTuple[Donut, Int]] = Seq(cartItem1,cartItem2);
        print(calculateTotal1(shoppingCartItems))
    ```        
-2b. Equivalent Case Class Implementation
+#  Equivalent Case Class Implementation
    ```$xslt
    case class ShoppingCartItemWithCase(donut: Donut, quantity: Int)
       
