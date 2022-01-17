@@ -1,6 +1,6 @@
 #  Factory Via Companion Object
 
-    ```$xslt
+   ```$xslt
       class Car(name: String, model: Option[String], price:Option[Int]=None){
       
         def print = println(s"Car name = $name, model = ${model.getOrElse(0)}")
@@ -32,4 +32,4 @@
           val car3 = Car("Honda Jazz" , Option("Jazz") , None)
           println(s"The class type of car3 = ${car3.getClass}")
           car3.print
-    ```
+   ```
