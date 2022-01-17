@@ -1,5 +1,5 @@
 # Inheritance
-1. Only the primary constructor can pass parameters to the base constructor
+1. Only the primary constructor (derived class) can pass parameters to the base constructor (primary/auxillary) of base class
 2. Extend normal , abstract or trait.
 3. Can extend only one class.
 
