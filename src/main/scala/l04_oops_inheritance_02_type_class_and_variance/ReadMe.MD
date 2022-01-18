@@ -8,17 +8,23 @@
 1. If “S” is subtype of “T” then List[S] is is a subtype of List[T].
    This kind of Inheritance Relationship between two Parameterized Types is known as “Covariant”
    
-   [![Image](https://github.com/yankils/Simple-DevOps-Project/blob/master/Devops_course.PNG "DevOps Project - CI/CD with Jenkins Ansible Docker Kubernetes ")](https://www.udemy.com/course/valaxy-devops/?referralCode=8147A5CF4C8C7D9E253F)
+   [![Image](https://github.com/IAmZero247/Scala_Learning/blob/main/images/scala-covariance1.png)]
    
 1. To represent Covariance relationship between two Parameterized Types, Scala uses the following syntax:
    Prefixing Type Parameter with “+” symbol defines Covariance in Scala.
+   
+   [![Image](https://github.com/IAmZero247/Scala_Learning/blob/main/images/scala-covariance2.png)]
    
 # Contravariant IN Scala
 1. If “S” is subtype of “T” then List[T] is is a subtype of List[S].
    This kind of Inheritance Relationship between two Parameterized Types is known as “Contravariant”
    
+   [![Image](https://github.com/IAmZero247/Scala_Learning/blob/main/images/scala-contravariance1.png)]
+   
 1. To represent Contravariant relationship between two Parameterized Types, Scala uses the following syntax:
    Prefixing Type Parameter with “-” symbol defines Contravariant in Scala.
+   
+   [![Image](https://github.com/IAmZero247/Scala_Learning/blob/main/images/scala-contravariance2.png)]
 
 # Invarient
 1. If “S” is subtype of “T” then List[S] and List[T] don’t have Inheritance Relationship or Sub-Typing. That means both are unrelated.
