@@ -22,7 +22,7 @@ object TypedAliasDemo {
       println(s"CartItem donut = ${cartItem._1}, quantity = ${cartItem._2}")
       i += cartItem._1.price*cartItem._2
     }
-    i // some random total cost
+    i
   }
   /*
    *def calculateTotal2(shoppingCartItems: Seq[ShoppingCartItemWithCase]): Double = {
