@@ -93,3 +93,50 @@
          you should be able to use a Tricycle as well.
          val p15 :ParkingNew[Bicycle] = new ParkingNew[Bicycle](new Tricycle())
     ```
+
+### If you are using covarient A  Like +A
+    **Covariant type A occurs in contravariant position in type A of value element**
+    ```$xslt
+      class Parking[+A] {
+       def parkIt(element: A): Parking[A] = new Parking(element)  <-- Covariant type A occurs in contravariant position
+                                                                      in type A of value element
+      }
+      
+      To resolve above CTE -> We could use the covariant A type to generate the limit of the lower type bound from B and 
+      let B be the one who types everything. Tada!!
+      
+      class Parking[+A] {
+        def parkIt[B >: A](element: B): Parking[B] = new Parking(element)
+      }
+    ```  
+    
+### Another use for scala type bounds is Use-site variance
+
+   ```$xslt
+      class Parking[A](val place: A){
+        def dosomething123(p1: Parking[_ <: Jeep]) {}
+        def dosomethingABC(p1: Parking[Vehicle]) {}
+      }
+
+      dosomething123(new Parking(new Jeep))
+      //dosomething123(new Parking(new Car)) //CTE
+
+
+
+      1. var p1 = new Parking(new Car)     //p1 is Parking[Car] , not Parking[Vehicle] 
+         dosomethingABC(p1)
+       ***********************************************
+          <console>:12: error: type mismatch;
+           found : Parking[Car]
+           required: Parking[Vehicle]
+           Note: Car <: Vehicle, but class Parking is invariant in type A.
+           You may wish to define A as +A instead. (SLS 4.5)
+           dosomethingABC(p1)
+                       ^ 
+       ***********************************************
+      
+      2.dosomething(new Parking(new Car)) /*The type inference will look for a
+        matching type: it will rise the type of Car to Vehicle, creating a Parking[Vehicle]. 
+        Making everything work again.
+       */
+   ```    

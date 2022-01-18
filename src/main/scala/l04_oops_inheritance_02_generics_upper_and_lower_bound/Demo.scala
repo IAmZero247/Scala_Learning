@@ -10,6 +10,9 @@ class Bicycle extends Vehicle
 class Tricycle extends Bicycle
 class Vegetable
 class Parking[A](val place: A)
+
+
+
 class ParkInPair[A](val place1: A, val place2: A)
 class ParkingOnlyVehicles[A <: Vehicle](val place: A)
 //ParkingOnlyVehicles[A <: Vehicle] means that the A type must be type or subtype of Vehicle
