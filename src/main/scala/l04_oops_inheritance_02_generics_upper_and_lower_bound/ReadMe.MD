@@ -62,8 +62,10 @@
        new Parking[Vegetable](new Vegetable)
        //new ParkingOnlyVehicles[Vegetable](new Vegetable) //CTE/RTE
    ```
-2. To Park Only Car 
-    
+## Lower type bounds
+
+1. To Park Only Cars   
+
     `class ParkingOnlyCars[A >: Jeep](val place: A)`   
     
     **ParkingOnlyCars[A >: Jeep] means that A must be Jeep or higher from Jeep, being Jeep the frontier (bound).**
@@ -74,7 +76,10 @@
         new ParkingOnlyCars[Vehicle](new Car)
         //new ParkingOnlyCars[MiniJeep](new MiniJeep) //CTE/RTE
     ```
-3.  `class ParkingNew[A >: Bicycle <: Vehicle](val plaza: A)`
+
+## Upper and Lower Bounds   
+   
+1.  `class ParkingNew[A >: Bicycle <: Vehicle](val plaza: A)`
     
     **ParkingNew[A >: Bicycle <: Vehicle] mean A must be subtypes of Vehicles, above Tricycle[Vehicles , Bicycle]. A cant be Car or MotorCycle**
     
