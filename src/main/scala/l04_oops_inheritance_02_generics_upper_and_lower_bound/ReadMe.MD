@@ -95,7 +95,9 @@
     ```
 
 ### If you are using covarient A  Like +A
-    **Covariant type A occurs in contravariant position in type A of value element**
+
+**Covariant type A occurs in contravariant position in type A of value element**
+    
     ```$xslt
       class Parking[+A] {
        def parkIt(element: A): Parking[A] = new Parking(element)  <-- Covariant type A occurs in contravariant position
