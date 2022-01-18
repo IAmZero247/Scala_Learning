@@ -43,12 +43,13 @@ object Demo {
     new Parking[Vegetable](new Vegetable)
     //new ParkingOnlyVehicles[Vegetable](new Vegetable) //Run Time Error
 
-
+   //Lower Type Bound
     new ParkingOnlyCars[Jeep]( new Jeep)
     new ParkingOnlyCars[Car]( new Car)
     new ParkingOnlyCars[Vehicle](new Car)
     //new ParkingOnlyCars[MiniJeep](new MiniJeep)
 
+    //Combination
     new ParkingNew[Bicycle](new Bicycle)
     new ParkingNew[Vehicle](new Car)
     new ParkingNew[Vehicle](new Coupe)
