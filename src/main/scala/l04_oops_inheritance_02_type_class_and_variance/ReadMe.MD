@@ -1,6 +1,6 @@
 # Scala supports the following three kinds of Variance.
 
-   **Variance is related to the ~~Liskov Substitution Principle (LSP)~~ telling that 
+   **Variance is related to the** ~~Liskov Substitution Principle (LSP)~~ **telling that 
   “functions that use pointers to base classes must be able to use objects of derived classes without knowing it”.
   
   This means that if S is a subtype of T, then the objects of type T maybe replaced with
