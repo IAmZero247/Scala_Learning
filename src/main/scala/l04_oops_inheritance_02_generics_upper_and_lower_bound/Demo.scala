@@ -35,24 +35,25 @@ object Demo {
      */
     val p4: ParkInPair[Vehicle] = new ParkInPair(new Car, new Motorcycle)
     //Upper type bounds
-    new ParkingOnlyVehicles[Vehicle](new Car())
-    new ParkingOnlyVehicles[Car](new Car())
-    new ParkingOnlyVehicles[Jeep](new Jeep())
-    new ParkingOnlyVehicles[Motorcycle](new Motorcycle())
+    val p5: ParkingOnlyVehicles[Vehicle] =new ParkingOnlyVehicles[Vehicle](new Car())
+    val p6: ParkingOnlyVehicles[Car]     =new ParkingOnlyVehicles[Car](new Car())
+    val p7: ParkingOnlyVehicles[Jeep]    =new ParkingOnlyVehicles[Jeep](new Jeep())
+    val p8: ParkingOnlyVehicles[Motorcycle]    =new ParkingOnlyVehicles[Motorcycle](new Motorcycle())
 
     new Parking[Vegetable](new Vegetable)
     //new ParkingOnlyVehicles[Vegetable](new Vegetable) //Run Time Error
 
    //Lower Type Bound
-    new ParkingOnlyCars[Jeep]( new Jeep)
-    new ParkingOnlyCars[Car]( new Car)
-    new ParkingOnlyCars[Vehicle](new Car)
+    val p9 : ParkingOnlyCars[Jeep]    = new ParkingOnlyCars[Jeep]( new Jeep)
+    val p10: ParkingOnlyCars[Car]     = new ParkingOnlyCars[Car]( new Car)
+    val p11: ParkingOnlyCars[Vehicle] = new ParkingOnlyCars[Vehicle](new Car)
     //new ParkingOnlyCars[MiniJeep](new MiniJeep)
 
     //Combination
-    new ParkingNew[Bicycle](new Bicycle)
-    new ParkingNew[Vehicle](new Car)
-    new ParkingNew[Vehicle](new Coupe)
-    new ParkingNew[Bicycle](new Tricycle)
+    val p12 :ParkingNew[Bicycle] = new ParkingNew[Bicycle](new Bicycle)
+    val p13 :ParkingNew[Vehicle] = new ParkingNew[Vehicle](new Car)
+    val p14 :ParkingNew[Vehicle] = new ParkingNew[Vehicle](new Coupe)
+    val p15  = new ParkingNew[Bicycle](new Tricycle)
+    //val p15 :ParkingNew[Bicycle] = new ParkingNew[Bicycle](new Tricycle)
   }
 }
