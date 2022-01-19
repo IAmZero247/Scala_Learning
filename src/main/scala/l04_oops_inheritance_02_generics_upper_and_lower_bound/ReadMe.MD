@@ -1,4 +1,6 @@
-# Generic Type
+# Generic Type , Lower and Upper Bound Types
+
+## Generic Type
 
 
 1. Class Definition
