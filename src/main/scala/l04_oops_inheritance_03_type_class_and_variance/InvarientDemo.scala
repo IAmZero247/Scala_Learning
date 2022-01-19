@@ -1,4 +1,4 @@
-package l04_oops_inheritance_02_type_class_and_variance
+package l04_oops_inheritance_03_type_class_and_variance
 abstract class DonutInv(name: String) {
   def printName: Unit
 }
