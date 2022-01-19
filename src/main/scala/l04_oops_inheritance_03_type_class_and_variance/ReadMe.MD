@@ -3,8 +3,10 @@
    **Variance is related to the** **~~Liskov Substitution Principle (LSP)~~** 
    **telling that “functions that use pointers to base classes must be able to use objects of derived classes without knowing it”.**
   
-  **This means that if S is a subtype of T, then the objects of type T maybe replaced with objects of type S without changing the behavior of T.**
+   **This means that if S is a subtype of T, then the objects of type T maybe replaced with objects of type S without changing the behavior of T.**
 
+   Ref -> https://www.freecodecamp.org/news/understand-scala-variances-building-restaurants/
+   
 1. Covariant
 2. Invariant
 3. Contravariant
