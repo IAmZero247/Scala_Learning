@@ -30,11 +30,11 @@ object Demo {
     val glazedDonut1:  GlazedDonutInv = GlazedDonutInv("Glazed Donut1")
     val vanillaDonut2: DonutInv = VanillaDonutInv("Vanilla Donut2")
     val glazedDonut2:  DonutInv = GlazedDonutInv("Glazed Donut2")
-    val shoppingCartHoldAllBaseandSubclass: ShoppingCartInv[DonutInv] = new ShoppingCartInv[DonutInv](Seq[DonutInv](vanillaDonut1, glazedDonut1, vanillaDonut2, glazedDonut2))
+    val shoppingCartHoldAllBaseAndSubclass: ShoppingCartInv[DonutInv] = new ShoppingCartInv[DonutInv](Seq[DonutInv](vanillaDonut1, glazedDonut1, vanillaDonut2, glazedDonut2))
 
     val shoppingCartHoldVanillaDonutOnly: ShoppingCartInv[VanillaDonutInv] = new ShoppingCartInv[VanillaDonutInv](Seq[VanillaDonutInv](vanillaDonut1))
 
-    shoppingCartHoldAllBaseandSubclass.printCartItems
+    shoppingCartHoldAllBaseAndSubclass.printCartItems
     shoppingCartHoldVanillaDonutOnly.printCartItems
 
 
