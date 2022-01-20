@@ -1,35 +1,41 @@
 package l04_oops_inheritance_03_type_class_and_variance
 
 
-abstract class DonutContra(name: String) {
-  def printName: Unit
+abstract class Donut(name: String) {
+  def getName: String
 }
 
-case class VanillaDonutContra(name: String) extends DonutContra(name) {
-  override def printName: Unit = println(name)
+
+case class VanillaDonut(name: String, price:Int) extends Donut(name) {
+  override def getName: String = name
 }
 
-case class GlazedDonutContra(name: String) extends DonutContra(name) {
-  override def printName: Unit = println(name)
+case class GlazedDonut(name: String, price:Int) extends Donut(name) {
+  override def getName: String = name
 }
 
-class ShoppingCartContra[-D <: DonutContra](donuts: Seq[D]) {
-  def printCartItems: Unit = donuts.foreach(_.printName)
+class ShoppingCart[-D <: Donut](donuts: Seq[D]) {
+  def printCartItems: Unit = donuts.foreach(
+    i=> println(i)
+  )
 }
+
 
 object ContraVarientDemo {
   def main(args: Array[String]): Unit = {
-    val vanillaDonut1: VanillaDonutContra = VanillaDonutContra("Vanilla Donut1")
-    val glazedDonut1:  GlazedDonutContra = GlazedDonutContra("Glazed Donut1")
-    val vanillaDonut2: DonutContra = VanillaDonutContra("Vanilla Donut2")
-    val glazedDonut2:  GlazedDonutContra = GlazedDonutContra("Glazed Donut2")
+    val vanillaDonut: VanillaDonut = VanillaDonut("Vanilla Donut Amazing" , 2)
+    vanillaDonut.getName
+
+    val glazedDonut: Donut = GlazedDonut("Glazed Donut" ,4 )
+    glazedDonut.getName
+
 
     /*
-     Contra variance - If i add glazedDonut in seq , I will get CTE
+     Contra variance - If i add glazedDonut of Type GlazedDonut  in seq , I will get CTE
      The Shopping cart should be type of VanillaDonut but must hold  VanillaDonut and Donut types.
      */
-//    println("########### Contravarient ###########")
-//    val shoppingCartForContravarient: ShoppingCartContravarient[VanillaDonut] = new ShoppingCartContravarient[Donut](Seq(vanillaDonut1,glazedDonut1, vanillaDonut2, glazedDonut2 ))
-//    shoppingCartForContravarient.printCartItems
+    val shoppingCart: ShoppingCart[VanillaDonut] = new ShoppingCart[Donut](Seq(glazedDonut ,vanillaDonut))
+    shoppingCart.printCartItems
+    //Note -> the shopping cart is holding wrong donut glazedDonut.
   }
 }

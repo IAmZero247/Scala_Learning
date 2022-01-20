@@ -2,7 +2,7 @@
 
 ### What if my Type class expects only one child class out of 2 ?
 
-### ShoppingCart of type VanillaDonut? You should get a compiler error for a ShoppingCart of type VanillaDonut:
+### ShoppingCart of type VanillaDonut? You should get a compiler error for a ShoppingCart of having a sequence holding type VanillaDonut:
 
 ### We've enabled covariance of type Donuts using the notation [+D <: Donut]
 
