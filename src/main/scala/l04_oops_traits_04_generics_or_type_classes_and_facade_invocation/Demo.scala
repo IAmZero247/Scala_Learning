@@ -1,4 +1,4 @@
-package l04_oops_traits_04_generics_or_type_classes
+package l04_oops_traits_04_generics_or_type_classes_and_facade_invocation
 
 
 trait DonutShoppingCartService[A] {
